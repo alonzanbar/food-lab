@@ -1,0 +1,55 @@
+---
+interface Props {
+  variant?: 'form' | 'dashboard' | 'list';
+  class?: string;
+}
+
+const { variant = 'dashboard', class: className = '' } = Astro.props;
+---
+
+<div class={`bg-white p-4 h-full min-h-[200px] ${className}`}>
+  {variant === 'form' && (
+    <div class="space-y-3">
+      <div class="h-2 bg-slate-200 rounded w-3/4" />
+      <div class="h-8 bg-slate-100 rounded border border-slate-200" />
+      <div class="h-2 bg-slate-200 rounded w-1/2" />
+      <div class="h-8 bg-slate-100 rounded border border-slate-200" />
+      <div class="h-2 bg-slate-200 rounded w-2/3" />
+      <div class="h-20 bg-slate-100 rounded border border-slate-200" />
+      <div class="h-8 bg-teal-500 rounded w-24 mt-2" />
+    </div>
+  )}
+  {variant === 'dashboard' && (
+    <div class="space-y-3">
+      <div class="flex gap-2">
+        <div class="flex-1 h-16 bg-teal-50 rounded-lg border border-teal-100" />
+        <div class="flex-1 h-16 bg-amber-50 rounded-lg border border-amber-100" />
+        <div class="flex-1 h-16 bg-blue-50 rounded-lg border border-blue-100" />
+      </div>
+      <div class="h-24 bg-slate-50 rounded-lg border border-slate-200 flex items-center justify-center">
+        <div class="flex gap-4">
+          <div class="w-8 h-12 bg-teal-200 rounded" />
+          <div class="w-8 h-16 bg-teal-300 rounded" />
+          <div class="w-8 h-10 bg-teal-200 rounded" />
+          <div class="w-8 h-14 bg-teal-300 rounded" />
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-2">
+        {[1,2,3,4].map(() => (
+          <div class="h-12 bg-slate-50 rounded border border-slate-200" />
+        ))}
+      </div>
+    </div>
+  )}
+  {variant === 'list' && (
+    <div class="space-y-2">
+      {[1,2,3,4,5].map((i) => (
+        <div class="flex items-center gap-2 p-2 bg-slate-50 rounded border border-slate-100">
+          <div class="w-4 h-4 rounded border border-teal-300" />
+          <div class="flex-1 h-2 bg-slate-200 rounded" />
+          <div class="w-8 h-2 bg-slate-200 rounded" />
+        </div>
+      ))}
+    </div>
+  )}
+</div>

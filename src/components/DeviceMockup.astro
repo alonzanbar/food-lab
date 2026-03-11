@@ -1,0 +1,27 @@
+---
+interface Props {
+  type?: 'tablet' | 'phone';
+  class?: string;
+}
+
+const { type = 'tablet', class: className = '' } = Astro.props;
+---
+
+<div class={`relative inline-block ${className}`}>
+  {type === 'tablet' && (
+    <div class="relative bg-slate-800 rounded-[2rem] p-3 shadow-2xl">
+      <div class="bg-slate-200 rounded-xl overflow-hidden aspect-[4/3] min-w-[280px] max-w-[400px]">
+        <slot />
+      </div>
+      <div class="absolute top-4 left-1/2 -translate-x-1/2 w-16 h-1.5 bg-slate-600 rounded-full" />
+    </div>
+  )}
+  {type === 'phone' && (
+    <div class="relative bg-slate-800 rounded-[2.5rem] p-2 shadow-2xl">
+      <div class="absolute top-4 left-1/2 -translate-x-1/2 w-12 h-5 bg-slate-700 rounded-full" />
+      <div class="bg-slate-200 rounded-[1.5rem] overflow-hidden aspect-[9/19] min-w-[140px] max-w-[180px] mt-6">
+        <slot />
+      </div>
+    </div>
+  )}
+</div>
