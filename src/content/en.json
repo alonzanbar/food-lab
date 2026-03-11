@@ -94,7 +94,31 @@
   },
   "about": {
     "title": "About",
-    "content": "We help food factories in Israel reduce manual quality monitoring work, improve traceability, and better prepare for regulatory and certification requirements. Our team understands the challenges of QA, lab, and operations in food manufacturing."
+    "content": "We help food factories in Israel reduce manual quality monitoring work, improve traceability, and better prepare for regulatory and certification requirements. Our team understands the challenges of QA, lab, and operations in food manufacturing.",
+    "teamTitle": "Our Team",
+    "team": [
+      {
+        "name": "Eng. Noam Egel",
+        "role": "Senior consultant in food safety and regulation",
+        "bio": "Extensive experience supporting food factories, retail chains, catering companies, and institutional kitchens. Specializes in planning and establishing food businesses and factories, and implementing HACCP systems, food safety procedures, and quality standards.",
+        "detail": "In his work, he accompanies organizations from the planning and construction of facilities, through building food safety management systems and writing procedures, to meeting Ministry of Health requirements and international standards.",
+        "image": "/images/team/noam-egel.png"
+      },
+      {
+        "name": "Dr. Yafim Afraimov",
+        "role": "Expert in public health, regulation and standards in food and quality",
+        "bio": "Extensive experience supporting manufacturers, importers, and retail chains in meeting regulatory requirements, implementing food quality and safety standards, and establishing management and control systems.",
+        "detail": "Dr. Afraimov has practical knowledge and experience working with international and local standards, including Ministry of Health regulation and international market requirements. In his work, he accompanies organizations in licensing processes, product labeling, risk assessments, and compliance testing.",
+        "image": "/images/team/yafim-afraimov.png"
+      },
+      {
+        "name": "Alon Zanbar",
+        "role": "Senior in technology and software engineering",
+        "bio": "Extensive experience leading large development organizations and establishing complex software platforms at scale. Specializes in cloud-based systems, artificial intelligence and advanced optimization, and leading global engineering teams from idea to market-ready product.",
+        "detail": "In his work, he leads development of innovative technological products from specification and architecture, through building scalable systems and advanced development processes, to deployment and operation in production environments for large-scale organizations and clients.",
+        "image": "/images/team/placeholder.svg"
+      }
+    ]
   },
   "contact": {
     "title": "Contact",
