@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "food-lab",
-    "staging": "food-lab",
-    "prod": "food-lab"
+    "default": "food-lab-489907",
+    "staging": "food-lab-489907",
+    "prod": "food-lab-489907"
   }
 }

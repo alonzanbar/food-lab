@@ -39,11 +39,11 @@ git add .
 # First commit
 git commit -m "Initial commit: Food Lab marketing site"
 
-# Add GitHub remote (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/food-lab.git
+# Add GitHub remote
+git remote add origin https://github.com/alonzanbar/food-lab.git
 
 # Or if using SSH
-git remote add origin git@github.com:YOUR_USERNAME/food-lab.git
+git remote add origin git@github.com:alonzanbar/food-lab.git
 
 # Push to main
 git branch -M main
@@ -56,7 +56,7 @@ If the `food-lab` repo already exists on GitHub and is empty:
 git init
 git add .
 git commit -m "Initial commit: Food Lab marketing site"
-git remote add origin https://github.com/YOUR_USERNAME/food-lab.git
+git remote add origin https://github.com/alonzanbar/food-lab.git
 git branch -M main
 git push -u origin main
 ```
@@ -69,12 +69,13 @@ git push -u origin main
 
 1. **Create Firebase project** (if not done):
    - Go to [Firebase Console](https://console.firebase.google.com/)
-   - Create project `food-lab` (or use existing)
+   - Create project (e.g. "Food Lab") — note the **Project ID** (e.g. `food-lab` or `food-lab-xxxxx`)
+   - Update `.firebaserc` with your actual Project ID
 
 2. **Login and select project**:
    ```bash
    npx firebase login
-   npx firebase use food-lab
+   npx firebase use food-lab-489907
    ```
 
 3. **Get deploy token** (for GitHub Actions):
