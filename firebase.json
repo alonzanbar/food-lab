@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "food-lab-489907",
+    "site": "food-lab",
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "cleanUrls": true
