@@ -1,0 +1,16 @@
+---
+import Layout from '../../components/Layout.astro';
+const t = (await import('../../content/en.json')).default;
+---
+
+<Layout title={`${t.about.title} | Food Lab`} description={t.about.content} locale="en">
+  <section class="py-16 px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl font-bold text-slate-900 mb-6">{t.about.title}</h1>
+      <p class="text-slate-600 leading-relaxed">{t.about.content}</p>
+      <a href="/en/#cta" class="inline-block mt-8 px-6 py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-700 transition">
+        {t.hero.ctaPrimary}
+      </a>
+    </div>
+  </section>
+</Layout>

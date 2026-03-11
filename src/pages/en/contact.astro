@@ -1,0 +1,16 @@
+---
+import Layout from '../../components/Layout.astro';
+import DemoForm from '../../components/DemoForm.astro';
+const t = (await import('../../content/en.json')).default;
+---
+
+<Layout title={`${t.contact.title} | Food Lab`} description={t.contact.intro} locale="en">
+  <section class="py-16 px-4 sm:px-6">
+    <div class="max-w-2xl mx-auto">
+      <h1 class="text-4xl font-bold text-slate-900 mb-4">{t.contact.title}</h1>
+      <p class="text-slate-600 mb-8">{t.contact.intro}</p>
+      <h2 class="text-xl font-semibold text-slate-800 mb-4">{t.contact.formTitle}</h2>
+      <DemoForm locale="en" />
+    </div>
+  </section>
+</Layout>

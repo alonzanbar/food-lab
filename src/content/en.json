@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "langSwitch": "עברית"
+  },
+  "hero": {
+    "headline": "Smarter quality operations for food factories",
+    "subheadline": "Automate monitoring and stay ahead of regulatory and certification requirements.",
+    "ctaPrimary": "Request a demo",
+    "ctaSecondary": "See how it works"
+  },
+  "problem": {
+    "title": "The problem: manual work that loses control",
+    "intro": "Many food factories still rely on manual processes for:",
+    "items": [
+      "Lab test follow-up",
+      "Routine monitoring checks",
+      "Shift-based process control",
+      "Escalating deviations",
+      "Documentation and traceability"
+    ],
+    "painPoints": [
+      "Scattered spreadsheets",
+      "Paper forms",
+      "Delayed response to deviations",
+      "Missed checks",
+      "Fragmented communication"
+    ]
+  },
+  "solution": {
+    "title": "The solution: digitization and automation",
+    "intro": "We help factories digitize and automate these workflows:",
+    "items": [
+      "Recurring monitoring tasks",
+      "Lab result handling",
+      "Alerts on missing or abnormal results",
+      "Structured follow-up",
+      "Traceable records"
+    ]
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "steps": [
+      { "num": "1", "title": "Define workflows and control points", "desc": "Set up your workflows and required checkpoints." },
+      { "num": "2", "title": "Capture data from teams and systems", "desc": "Teams fill forms; data is collected from existing systems." },
+      { "num": "3", "title": "Detect delays, deviations, and missing checks", "desc": "The system automatically flags what wasn't done or falls outside the norm." },
+      { "num": "4", "title": "Trigger alerts, follow-up, and visibility", "desc": "Alerts fire, follow-up is structured, and teams get full visibility." }
+    ]
+  },
+  "useCases": {
+    "title": "Use cases",
+    "items": [
+      { "title": "Raw material intake checks", "desc": "Track incoming inspections and documentation." },
+      { "title": "In-process quality checks", "desc": "Monitor control points across production." },
+      { "title": "Lab sample follow-up", "desc": "Alerts on results and deviations." },
+      { "title": "Production monitoring", "desc": "Track processes by line and shift." },
+      { "title": "Deviation escalation", "desc": "Structured process for handling deviations." },
+      { "title": "Corrective action tracking", "desc": "Document and close corrective actions." },
+      { "title": "Audit preparation", "desc": "Organized records ready for inspection." },
+      { "title": "Shift handoff visibility", "desc": "Full visibility between shifts." }
+    ]
+  },
+  "compliance": {
+    "title": "Compliance and certifications",
+    "intro": "The system helps factories support readiness for:",
+    "items": ["Ministry of Health", "GMP", "HACCP", "ISO 22000", "FSSC 22000"],
+    "disclaimer": "The system helps reduce compliance risk, supports audit readiness, and improves traceability. It does not guarantee full compliance."
+  },
+  "benefits": {
+    "title": "Business value",
+    "items": [
+      "Less manual coordination",
+      "Faster response to issues",
+      "Better visibility",
+      "Stronger traceability",
+      "Reduced risk of missed checks",
+      "Better consistency across shifts and lines"
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "q": "Is this a replacement for our QA or lab team?", "a": "No. The system complements your teams — it reduces manual load and improves visibility and traceability." },
+      { "q": "Can we start with one plant or one process?", "a": "Yes. You can roll out gradually at a single plant or for a specific process." },
+      { "q": "Does it fit existing workflows?", "a": "Yes. The system is designed to fit existing factory workflows." },
+      { "q": "Does it support Hebrew?", "a": "Yes. The interface is fully available in Hebrew." },
+      { "q": "Can it integrate with existing systems?", "a": "Yes. Integration with existing systems is possible as needed." },
+      { "q": "How long does onboarding take?", "a": "It depends on scope. Typically a few weeks to get started." }
+    ]
+  },
+  "cta": {
+    "title": "Request a demo",
+    "subtitle": "Fill in your details and we'll get back to you soon.",
+    "submit": "Submit"
+  },
+  "footer": {
+    "links": "Links",
+    "legal": "Legal",
+    "copyright": "© All rights reserved"
+  },
+  "about": {
+    "title": "About",
+    "content": "We help food factories in Israel reduce manual quality monitoring work, improve traceability, and better prepare for regulatory and certification requirements. Our team understands the challenges of QA, lab, and operations in food manufacturing."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Interested in a demo? Fill in your details and we'll get back to you.",
+    "formTitle": "Demo request"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "content": "This privacy policy describes how we collect, use, and protect your information. We respect your privacy and are committed to protecting your data."
+  },
+  "form": {
+    "name": "Full name",
+    "company": "Company",
+    "role": "Role",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message"
+  }
+}

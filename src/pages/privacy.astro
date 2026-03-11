@@ -1,0 +1,13 @@
+---
+import Layout from '../components/Layout.astro';
+const t = (await import('../content/he.json')).default;
+---
+
+<Layout title={`${t.privacy.title} | Food Lab`} description={t.privacy.content} locale="he">
+  <section class="py-16 px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl font-bold text-slate-900 mb-6">{t.privacy.title}</h1>
+      <p class="text-slate-600 leading-relaxed">{t.privacy.content}</p>
+    </div>
+  </section>
+</Layout>
