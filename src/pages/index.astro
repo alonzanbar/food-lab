@@ -5,6 +5,7 @@ import SectionImage from '../components/SectionImage.astro';
 import IconBadge from '../components/IconBadge.astro';
 import UseCaseCard from '../components/UseCaseCard.astro';
 import DeviceMockup from '../components/DeviceMockup.astro';
+import DeviceImageMockup from '../components/DeviceImageMockup.astro';
 import DashboardMockup from '../components/DashboardMockup.astro';
 import { images } from '../config/images';
 const t = (await import('../content/he.json')).default;
@@ -32,12 +33,9 @@ const useCaseIcons = ['inbox', 'settings', 'flask', 'chart', 'alert', 'check', '
         </a>
       </div>
       <div class="mt-16 flex flex-wrap justify-center items-end gap-6 lg:gap-12">
-        <DeviceMockup type="tablet" class="scale-90 lg:scale-100">
-          <DashboardMockup variant="dashboard" />
-        </DeviceMockup>
-        <DeviceMockup type="phone" class="scale-75 lg:scale-90 -mb-4">
-          <DashboardMockup variant="form" />
-        </DeviceMockup>
+        <DeviceImageMockup type="tablet" src={images.factory2} alt="עובדים במפעל מזון" class="scale-90 lg:scale-100" />
+        <DeviceImageMockup type="tablet" src={images.dashboard} alt="לוח בקרה דיגיטלי" class="scale-90 lg:scale-100" />
+        <DeviceImageMockup type="phone" src={images.form} alt="טפסים במובייל" class="scale-75 lg:scale-90 -mb-4" />
       </div>
     </div>
   </section>
@@ -105,12 +103,8 @@ const useCaseIcons = ['inbox', 'settings', 'flask', 'chart', 'alert', 'check', '
           </ul>
         </div>
         <div class="flex justify-center gap-4">
-          <DeviceMockup type="tablet" class="shadow-2xl">
-            <DashboardMockup variant="dashboard" />
-          </DeviceMockup>
-          <DeviceMockup type="phone" class="hidden lg:block -mt-8 shadow-2xl">
-            <DashboardMockup variant="list" />
-          </DeviceMockup>
+          <DeviceImageMockup type="tablet" src={images.factory3} alt="בדיקת איכות במפעל" class="shadow-2xl" />
+          <DeviceImageMockup type="phone" src={images.form2} alt="טפסים בטאבלט" class="hidden lg:block -mt-8 shadow-2xl" />
         </div>
       </div>
     </div>
@@ -138,9 +132,7 @@ const useCaseIcons = ['inbox', 'settings', 'flask', 'chart', 'alert', 'check', '
         </div>
       </div>
       <div class="mt-16 flex justify-center">
-        <DeviceMockup type="tablet" class="max-w-md">
-          <DashboardMockup variant="dashboard" />
-        </DeviceMockup>
+        <DeviceImageMockup type="tablet" src={images.dashboard2} alt="לוח בקרה ואנליטיקה" class="max-w-md" />
       </div>
     </div>
   </section>
@@ -203,9 +195,7 @@ const useCaseIcons = ['inbox', 'settings', 'flask', 'chart', 'alert', 'check', '
           </ul>
         </div>
         <div class="flex justify-center">
-          <DeviceMockup type="tablet" class="shadow-2xl">
-            <DashboardMockup variant="dashboard" />
-          </DeviceMockup>
+          <DeviceImageMockup type="tablet" src={images.factory1} alt="צוות במפעל מזון" class="shadow-2xl" />
         </div>
       </div>
     </div>
