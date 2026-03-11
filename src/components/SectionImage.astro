@@ -1,0 +1,22 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  class?: string;
+  lazy?: boolean;
+  aspect?: 'video' | 'square' | 'wide';
+}
+
+const { src, alt, class: className = '', lazy = true, aspect = 'video' } = Astro.props;
+const aspectClass = aspect === 'video' ? 'aspect-video' : aspect === 'square' ? 'aspect-square' : 'aspect-[21/9]';
+---
+
+<img
+  src={src}
+  alt={alt}
+  loading={lazy ? 'lazy' : 'eager'}
+  decoding="async"
+  class={`rounded-xl object-cover shadow-lg ${aspectClass} ${className}`}
+  width="800"
+  height={aspect === 'video' ? 450 : aspect === 'square' ? 800 : 343}
+/>

@@ -1,16 +1,25 @@
 ---
 import Layout from '../components/Layout.astro';
+import SectionImage from '../components/SectionImage.astro';
+import { images } from '../config/images';
 const t = (await import('../content/he.json')).default;
 ---
 
 <Layout title={`${t.about.title} | Food Lab`} description={t.about.content} locale="he">
-  <section class="py-16 px-4 sm:px-6">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-4xl font-bold text-slate-900 mb-6">{t.about.title}</h1>
-      <p class="text-slate-600 leading-relaxed">{t.about.content}</p>
-      <a href="/#cta" class="inline-block mt-8 px-6 py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-700 transition">
-        {t.hero.ctaPrimary}
-      </a>
+  <section class="py-20 px-4 sm:px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl font-bold text-slate-900 mb-6">{t.about.title}</h1>
+          <p class="text-slate-600 leading-relaxed">{t.about.content}</p>
+          <a href="/#cta" class="inline-block mt-8 px-6 py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-700 transition">
+            {t.hero.ctaPrimary}
+          </a>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl">
+          <SectionImage src={images.about} alt="אודות Food Lab" aspect="video" />
+        </div>
+      </div>
     </div>
   </section>
 </Layout>

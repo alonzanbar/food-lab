@@ -13,15 +13,6 @@
     "ctaSecondary": "See how it works"
   },
   "problem": {
-    "title": "The problem: manual work that loses control",
-    "intro": "Many food factories still rely on manual processes for:",
-    "items": [
-      "Lab test follow-up",
-      "Routine monitoring checks",
-      "Shift-based process control",
-      "Escalating deviations",
-      "Documentation and traceability"
-    ],
     "painPoints": [
       "Scattered spreadsheets",
       "Paper forms",
